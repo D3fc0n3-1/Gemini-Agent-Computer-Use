@@ -13,7 +13,7 @@ class GeminiAgent:
     def __init__(self):
         self.api_key = os.environ.get('GOOGLE_API_KEY')
         self.client = genai.Client(api_key=self.api_key, http_options={'api_version': 'v1beta'})
-        self.model_id = "models/gemini-2.5-computer-use-preview-10-2025"
+        self.model_id = "models/gemini-3-flash-preview"
 
     def execute_action(self, action_json):
         try:
